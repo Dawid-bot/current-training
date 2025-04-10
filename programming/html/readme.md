@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <title>Titre de la page</title>
     <meta charset="UTF-8">
