@@ -1,0 +1,29 @@
+table {
+  border-collapse: collapse;
+  width: 50%;
+  border: solid 2px rgb(153, 148, 148);
+  margin-top: 5%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+th {
+  padding: 8px;
+  text-align: left;
+  background-color: rgb(48, 48, 218);
+  color: aliceblue;
+}
+tr {
+  background-color: rgb(255, 255, 255);
+}
+
+tr:nth-child(even) {
+  background-color: #9d9e9a;
+}
+
+caption {
+  background-color: lightgray;
+}
+
+.hoever-resultat:hover {
+  background-color: gold;
+}
