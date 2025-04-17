@@ -1,0 +1,51 @@
+body {
+  background-color: rgba(161, 157, 151, 0.555);
+  width: 100%;
+}
+h1 {
+  text-align: center;
+}
+.gras {
+  font-weight: bolder;
+  display: flex;
+  padding-left: 10px;
+}
+.msg {
+  font-weight: bolder;
+  display: flex;
+  padding-left: 2px;
+  width: 100%;
+}
+.txt {
+  resize: none;
+  width: 100%;
+}
+.background {
+  background-color: rgb(255, 255, 255);
+  margin-left: 30%;
+  margin-right: 30%;
+  height: 80vh;
+  margin-top: 4%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+h1 {
+  margin-bottom: 5vh;
+}
+.sub {
+  width: 100%;
+  margin-bottom: 5%;
+}
+button {
+  color: aliceblue;
+  display: flex;
+  background-color: #4bb051;
+  margin-top: 3%;
+  margin-left: 20px;
+}
+.check {
+  display: flex;
+  margin-left: 3%;
+  margin-top: 1%;
+}

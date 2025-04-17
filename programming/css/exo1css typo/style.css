@@ -1,0 +1,23 @@
+p {
+  color: blue;
+}
+.important {
+  color: red;
+}
+#special {
+  color: green;
+  text-decoration: underline green;
+}
+.back {
+  background-color: rgba(228, 228, 228, 0.945);
+  margin: 20px;
+}
+a {
+  color: magenta;
+}
+
+/* les 3 principaux
+balise : p, div, h1
+classe : .nomClasse
+identifiants: #identifant
+*/
