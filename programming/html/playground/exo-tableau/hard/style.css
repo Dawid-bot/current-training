@@ -45,7 +45,7 @@ footer {
   text-align: left;
   font-size: xx-large;
   color: #3a71a8;
-  padding-left: 1%;
+  padding-left: 3%;
   width: 70%;
 }
 
@@ -56,6 +56,7 @@ footer {
   color: red;
 }
 .col {
+  padding-left: 3%;
   color: grey;
   font-size: small;
 }
@@ -95,17 +96,20 @@ h4 {
 .des {
   width: 83%;
   color: #304c5f;
-}
-
-.remi {
-  padding-left: 3%;
+  text-align: left;
 }
 
 .part2 {
   color: #123344;
+  min-width: 120px;
+  padding: 0.5em;
   padding-bottom: 1em;
+  text-align: center;
 }
-
+.remi {
+  padding-left: 1.5em;
+  text-align: left;
+}
 .part3 {
   width: 100%;
   color: #123344;
