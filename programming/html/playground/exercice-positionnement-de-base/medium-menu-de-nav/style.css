@@ -71,12 +71,7 @@ body {
 h2 {
   padding-left: 3%;
   padding-bottom: 3%;
-}
-
-section {
-  width: 100%;
-
-  min-height: 40vh;
+  font-size: 2.5em;
 }
 
 .contenerbox {
@@ -90,13 +85,82 @@ section {
 .box {
   border: solid 2px rgba(128, 128, 128, 0.103);
   background-color: rgb(255, 255, 255);
-  padding: 0 4em;
+  padding: 2em;
   border-radius: 10px;
   min-height: 30vh;
+  text-align: center;
 }
 
-.png {
-  padding-left: 14em;
-  padding-top: 1.5em;
-  vertical-align: top;
+.img-box {
+  margin: 0 auto;
+  height: 3em;
+  width: auto;
+}
+
+.title-box {
+  font-size: 1.5em;
+}
+
+.p-box,
+.title-box {
+  text-align: center;
+}
+
+section {
+  margin: 8em;
+}
+
+.background {
+  background-color: rgba(211, 211, 211, 0.404);
+  width: 100%;
+  margin-left: 0;
+  padding-left: 8em;
+  padding-right: 8em;
+  height: 40vh;
+}
+
+.box-folio {
+  width: 95%;
+  margin: 0 auto;
+  border: 1px dashed rgb(146, 144, 144);
+  background-color: rgb(255, 255, 255);
+  height: 10vh;
+}
+
+.p-folio {
+  padding: 0 3em;
+  padding-bottom: 2em;
+  font-size: 1em;
+}
+
+.box-folio p {
+  text-align: center;
+  padding: 2em;
+  color: lightgray;
+}
+
+.p-info {
+  padding-left: 3em;
+  padding-right: 3em;
+  line-height: 2.5em;
+}
+
+.p-contact {
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 2em;
+}
+
+.box-contact {
+  width: 95%;
+  margin: 0 auto;
+  border: 1px dashed rgb(146, 144, 144);
+  background-color: rgb(255, 255, 255);
+  height: 10vh;
+}
+
+.box-contact p {
+  text-align: center;
+  padding: 2em;
+  color: lightgray;
 }
