@@ -22,16 +22,16 @@
       </header>
       <nav>
         <ul class="ul">
-          <div class="back-green">
-            <li>
-              <a>Accueil</a>
-            </li>
-          </div>
-          <li><a class="a li" href="#">Services</a></li>
-          <li><a class="a li" href="#">Portfolio</a></li>
-          <li><a class="a li" href="#">Blog</a></li>
-          <li><a class="a li" href="#">A propos</a></li>
-          <li><a class="a li" href="#">Contact</a></li>
+          <li>
+            <a class="btn back-green">Accueil</a>
+          </li>
+          <li>
+            <a class="btn a" href="#">Services</a>
+          </li>
+          <li><a class="btn a" href="#">Portfolio</a></li>
+          <li><a class="btn a" href="#">Blog</a></li>
+          <li><a class="btn a" href="#">A propos</a></li>
+          <li><a class="btn a" href="#">Contact</a></li>
         </ul>
       </nav>
       <main>
@@ -84,19 +84,111 @@
                 <li>Valorisation de l'image de marque</li>
               </ul>
             </div>
+            <p class="p">
+              En adoptant ces pratiques, les dévellopeurs et designers peuvent
+              contriuber a réduire l'empreinte carbonne du web, qui représente
+              aujourd'hui près de 4% des émissions mondiales de gaz a effets de
+              serre.
+            </p>
+            <div class="content-btn">
+              <a class="btn back-green btn-center btn-more" href=""
+                >En savoir plus</a
+              >
+            </div>
           </div>
         </section>
       </main>
 
       <article>
-        <h3>Articles récents</h3>
-        <p>Optimisation des images pour le web</p>
-        <p>Comment réduire la consommation d'énergie de votre site</p>
-        <p>L'impact environnemental du streaming vidéo</p>
-        <p>10 astuces pour un code plus propre</p>
+        <div class="article">
+          <h3>Articles récents</h3>
+          <p>Optimisation des images pour le web</p>
+          <p>Comment réduire la consommation d'énergie de votre site</p>
+          <p>L'impact environnemental du streaming vidéo</p>
+          <p>10 astuces pour un code plus propre</p>
+        </div>
+        <div class="news">
+          <h3>Newsletter</h3>
+          <p>
+            Recevez nos conseils pour un web plus vert directement dans votre
+            boite mail
+          </p>
+          <form>
+            <input
+              class="mail"
+              type="email"
+              id="email"
+              required
+              placeholder="Votre Email"
+            />
+            <input class="btn sub back-green" type="submit" value="S'abboner" />
+          </form>
+        </div>
+        <div class="categories">
+          <h3>Catégories</h3>
+          <a class="btn mini-btn back-light" href="">Dévelopement</a>
+          <a class="btn mini-btn back-light" href="">Désign</a>
+          <a class="btn mini-btn back-light" href="btn">Performances</a>
+          <a class="btn mini-btn back-light" href="btn">SEO</a>
+          <a class="btn mini-btn back-light" href="btn">Accessibilité</a>
+        </div>
       </article>
 
-      <footer></footer>
+      <footer class="cont-footer">
+        <div class="foot-content foot-col1">
+          <div class="foot">
+            <img src="./img/leaf (1).png" alt="img-footer" />
+            <h4>Eco design</h4>
+          </div>
+          <p>Pour un web plus respectueux de notre planète</p>
+        </div>
+        <div class="foot-content foot-col2">
+          <h4>Liens rapides</h4>
+          <ul>
+            <li class="foot-li"><a class="foot-a" href="">Acceuil</a></li>
+            <li class="foot-li"><a class="foot-a" href="">Services</a></li>
+            <li class="foot-li"><a class="foot-a" href="">Blog</a></li>
+            <li class="foot-li"><a class="foot-a" href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="foot-content foot-col3">
+          <h4>Contact</h4>
+          <p>123 rue de l'écologie</p>
+          <p>75000 Paris, France</p>
+          <p>Email: contact@ecodesign.fr</p>
+          <p>Tél +33 1 23 45 67 89</p>
+        </div>
+        <div class="foot-content foot-col4">
+          <h4>Suivez-nous</h4>
+          <div style="display: flex">
+            <img
+              class="footer-img"
+              src="./img/icons8-twitter-24.png"
+              alt="icon-twitter"
+              type="png"
+            />
+            <img
+              class="footer-img"
+              src="./img/icons8-facebook-24.png"
+              alt="icon-facebook"
+              type="png"
+            />
+            <img
+              class="footer-img"
+              src="./img/icons8-instagram-24.png"
+              alt="icon-instagram"
+              type="png"
+            />
+            <img
+              class="footer-img"
+              src="./img/icons8-linkedin-24.png"
+              alt="icon-linkin"
+              type="png"
+            />
+          </div>
+        </div>
+        <p class="foot-col5">© 2025 EcoDesign. Tous droits réservés.</p>
+      </footer>
     </div>
   </body>
 </html>
