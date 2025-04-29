@@ -15,6 +15,10 @@ body {
   grid-template-columns: 300px 1fr 300px;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 /* GESTION DES BOUTONS */
 
 .btn-center {
@@ -57,6 +61,7 @@ body {
 
 .container > header {
   display: flex;
+  align-items: center;
   background-color: #2c3d50;
   grid-area: head;
   color: white;
@@ -70,9 +75,13 @@ body {
 }
 
 img {
-  object-fit: cover;
-  height: 90px;
-  width: 90px;
+  object-fit: contain;
+  height: 100%;
+  width: auto;
+}
+
+.logo {
+  max-width: 65px;
 }
 
 /* GESTION DE LA NAVIGATION */
@@ -94,7 +103,7 @@ img {
 }
 
 .ul {
-  padding: 2em;
+  padding: 1em;
   margin: 0;
   list-style-type: none;
 }
@@ -154,13 +163,8 @@ img {
 
 .container > footer {
   grid-area: footer;
-  background: #020024;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 0.027) 0%,
-    rgba(9, 9, 121, 0.199) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: #2c3d50;
+  color: #f6f6f6;
 }
 
 .mail {
@@ -196,6 +200,7 @@ img {
 
 .foot {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -214,7 +219,7 @@ img {
 .foot-a {
   text-decoration: none;
   line-height: 2em;
-  color: #020024;
+  color: #ffffff;
 }
 
 .foot-col3 {
@@ -240,6 +245,79 @@ img {
 }
 
 .footer-img {
-  width: 50px;
-  height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1600px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "head head"
+      "nav nav"
+      "main sidebar"
+      "footer footer";
+    grid-template-rows: 10vh 1fr 1fr 300px;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .ul-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .media-main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "head"
+      "nav"
+      "main"
+      "sidebar"
+      "footer";
+    grid-template-rows: 10vh 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .container > main {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  h1 {
+    font-size: 100%;
+  }
+
+  .ul-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .media-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .media-tel-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .media-tel-border {
+    border-bottom: solid 1px;
+  }
+  .container > header {
+    padding: 0.2em;
+  }
 }
