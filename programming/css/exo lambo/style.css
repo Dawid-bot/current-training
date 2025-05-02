@@ -1,0 +1,191 @@
+body {
+    background-color: black;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "head head head"
+    "img1 img1 img1"
+    "img2 img2 img2"
+    "img3 img4 img5"
+    "img6 img7 img8" 
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 7vh 1fr 1fr 1fr 1fr 1fr;
+    
+    gap: 10px;
+}
+
+.container > header {
+grid-area: head;
+}
+
+
+/* .grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 
+} */
+
+.head {
+    position: fixed;
+    z-index: 100;
+    min-width: 100%;
+    grid-area: head;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    color: white;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;  
+}
+
+
+.link a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+
+}
+
+/* GESTION DU TEXTE */
+
+
+.card {
+    position: absolute;
+    top: 50%;
+    right: 0 ;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+.title-img {
+    color: white;
+}
+
+
+.text-img {
+    color: white ;
+}
+
+.link-img {
+    text-decoration: none;
+    color: rgb(0, 0, 163);
+}
+
+
+
+
+
+
+
+
+
+.position {
+    position: relative;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GESTION DES IMAGES */
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+
+}
+
+ .img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+
+.img6 {
+    grid-area: img6;
+}
+
+.img7 {
+    grid-area: img7;
+}
+
+.img8 {
+grid-area: img8;
+}
+
+
+
+
+footer {
+   margin: 2% 10%;
+    border-top: solid 2px  rgb(255, 255, 255);
+    grid-area: footer;
+    background-color: #000000;
+    color: white;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   padding: 5px 10%;
+}
+
+.foot-font {
+    font-weight: bold;
+}
