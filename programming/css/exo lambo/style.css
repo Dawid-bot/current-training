@@ -18,16 +18,19 @@ left: 0;
 right: 0;
     padding: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: #000000;
     color: white;
     align-items: center;
 }
 
+
+
 .link {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
     list-style: none;  
 }
@@ -131,15 +134,20 @@ img {
     margin-bottom: 10px;
 }
 
+.foot-position {
 
-
-footer {
-    margin: 2% 10%;
     border-top: solid 2px  rgb(255, 255, 255);
-    background-color: #000000;
+
     color: white;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+
+}
+
+footer {
+    padding: 2% 10%;
+    background-color: #000000;
+
 }
 
 .foot {
@@ -156,7 +164,6 @@ footer {
 
 @media screen and (max-width: 1280px) {
     .grid-gallery {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
  .head {
@@ -170,8 +177,8 @@ footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    footer {
-        display: grid;
+    .foot-position {
+        
         grid-template-columns: repeat(2, 1fr);
     }
 
